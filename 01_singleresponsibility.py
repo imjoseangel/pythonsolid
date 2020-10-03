@@ -1,9 +1,9 @@
 """
 Single Responsibility Principle
 
-A class should have only one job.  If a class has more than one responsibility,
-it becomes coupled.  A change to one responsibility results to modification of
-the other responsibility.
+A class or module should have one, and only one, reason to change. If a class
+has more than one responsibility, it becomes coupled. A change to one responsibility
+results to modification of the other responsibility.
 """
 
 
@@ -22,14 +22,14 @@ animal = Animal('Lion')
 animal.save(animal)
 
 """
-The Animal class violates the SRP.
+The Animal class violates the Single Responsibility Principle.
 
-How does it violate SRP?
+How does it violate Single Responsibility Principle?
 
-SRP states that classes should have one responsibility, here, we can draw out
-two responsibilities: animal database management and animal properties
-management.  The constructor and get_name manage the Animal properties while the
-save manages the Animal storage on a database.
+Single Responsibility Principle states that classes should have one responsibility,
+here, we can draw out two responsibilities: animal database management and animal
+properties management.  The constructor and get_name manage the Animal properties while
+the save manages the Animal storage on a database.
 
 How will this design cause issues in the future?
 
@@ -40,8 +40,8 @@ touched and recompiled to compensate for the new changes.
 You see this system smells of rigidity, it’s like a domino effect, touch one
 card it affects all other cards in line.
 
-To make this conform to SRP, we create another class that will handle the sole
-responsibility of storing an animal to a database:
+To make this conform to Single Responsibility Principle, we create another class
+that will handle the sole responsibility of storing an animal to a database:
 """
 
 

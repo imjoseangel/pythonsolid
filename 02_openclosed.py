@@ -1,8 +1,8 @@
 """
 Open-Closed Principle
 
-Software entities(Classes, modules, functions) should be open for extension, not
-modification.
+Software entities(Classes, modules, functions) should be open for extension
+but closed for modification.
 """
 
 

@@ -7,8 +7,8 @@ B. Abstractions should not depend on details. Details should depend upon
 abstractions.
 
 There comes a point in software development where our app will be largely
-composed of modules.  When this happens, we have to clear things up by using
-dependency injection.  High-level components depending on low-level components
+composed of modules. When this happens, we have to clear things up by using
+dependency injection. High-level components depending on low-level components
 to function.
 """
 
@@ -30,8 +30,9 @@ class Http:
 
 """
 Here, Http is the high-level component whereas XMLHttpService is the low-level
-component.  This design violates DIP A: High-level modules should not depend on
-low-level level modules. It should depend upon its abstraction.
+component. This design violates Dependency Inversion Principle A: High-level
+modules should not depend on low-level level modules. It should depend upon
+its abstraction.
 
 Ths Http class is forced to depend upon the XMLHttpService class.  If we were to
 change the Http connection service, maybe we want to connect to the internet
@@ -76,12 +77,9 @@ interface:
 """
 
 
-class XMLHttpService(Connection):
-    xhr = XMLHttpRequest()
-
+class XMLERequestService(Connection):
     def request(self, url: str, options: dict):
-        self.xhr.open()
-        self.xhr.send()
+        pass
 
 
 """
@@ -106,7 +104,8 @@ abstractions.  Http class(high level module) depends on the Connection
 interface(abstraction) and the Http service types(low level modules) in turn,
 depends on the Connection interface(abstraction).
 
-Also, this DIP will force us not to violate the Liskov Substitution Principle:
+Also, this Dependency Inversion Principle will force us not to violate the Liskov
+Substitution Principle:
 The Connection types Node-XML-MockHttpService are substitutable for their parent
 type Connection.
 """

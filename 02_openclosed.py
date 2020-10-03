@@ -174,10 +174,8 @@ class VIPDiscount(Discount):
         return super().get_discount() * 2
 
 
-"""
-If you decide 80% discount to super VIP customers, it should be like this:
-You see, extension without modification.
-"""
+# If you decide 80% discount to super VIP customers, it should be like:
+# Extension without modification.
 
 
 class SuperVIPDiscount(VIPDiscount):

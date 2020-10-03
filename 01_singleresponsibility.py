@@ -12,11 +12,14 @@ class Animal:
         self.name = name
 
     def get_name(self) -> str:
+        return f'My name is: {self.name}'
+
+    def save(self, animal):
         pass
 
-    def save(self, animal: Animal):
-        pass
 
+animal = Animal('Lion')
+animal.save(animal)
 
 """
 The Animal class violates the SRP.
@@ -46,8 +49,8 @@ class Animal:
     def __init__(self, name: str):
         self.name = name
 
-    def get_name(self):
-        pass
+    def get_name(self) -> str:
+        return f'My name is: {self.name}'
 
 
 class AnimalDB:
@@ -57,6 +60,10 @@ class AnimalDB:
     def save(self, animal: Animal):
         pass
 
+
+animal = Animal('Lion')
+db = AnimalDB()
+db.save(animal)
 
 """
 When designing our classes, we should aim to put related features together, so
@@ -77,8 +84,8 @@ class Animal:
         self.name = name
         self.db = AnimalDB()
 
-    def get_name(self):
-        return self.name
+    def get_name(self) -> str:
+        return f'My name is: {self.name}'
 
     def get(self, id):
         return self.db.get_animal(id)
@@ -86,6 +93,17 @@ class Animal:
     def save(self):
         self.db.save(animal=self)
 
+
+class AnimalDB:
+    def get_animal(self, id) -> Animal:
+        pass
+
+    def save(self, animal: Animal):
+        pass
+
+
+animal = Animal('Lion')
+animal.save()
 
 """
 The most important methods are kept in the Animal class and used as Facade for

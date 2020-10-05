@@ -5,7 +5,6 @@ from abc import ABCMeta, abstractmethod
 
 DEFAULT_LION_LEG_COUNT = 4
 DEFAULT_MOUSE_LEG_COUNT = 4
-DEFAULT_SNAKE_LEG_COUNT = 0
 
 
 class Animal:

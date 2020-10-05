@@ -13,7 +13,7 @@ to function.
 """
 
 
-class XMLHttpService(XMLHttpRequestService):
+class XMLHttpService:
     pass
 
 

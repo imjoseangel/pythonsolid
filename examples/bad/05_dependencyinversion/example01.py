@@ -31,7 +31,6 @@ class Manager:
     def get_legs_count(self):
         if self.animal is not None:
             self.animal.get_legs_count()
-            # And some complex codes go here....
 
 
 def main():

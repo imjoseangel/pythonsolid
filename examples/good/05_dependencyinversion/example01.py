@@ -8,7 +8,7 @@ DEFAULT_MOUSE_LEG_COUNT = 4
 DEFAULT_SNAKE_LEG_COUNT = 0
 
 
-class Animal():
+class Animal:
     __metaclass__ = ABCMeta
 
     @abstractmethod
@@ -34,7 +34,7 @@ class Snake(Animal):
         print(DEFAULT_SNAKE_LEG_COUNT)
 
 
-class Manager():
+class Manager:
 
     def __init__(self):
         self.animal = None

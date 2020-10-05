@@ -6,19 +6,19 @@ DEFAULT_MOUSE_LEG_COUNT = 4
 DEFAULT_SNAKE_LEG_COUNT = 0
 
 
-class Lion():
+class Lion:
 
     def get_legs_count(self):
         print(DEFAULT_LION_LEG_COUNT)
 
 
-class Mouse():
+class Mouse:
 
     def get_legs_count(self):
         print(DEFAULT_MOUSE_LEG_COUNT)
 
 
-class Manager():
+class Manager:
 
     def __init__(self):
         self.animal = None

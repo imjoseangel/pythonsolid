@@ -12,13 +12,20 @@ class Animal:
     def get_name(self) -> str:
         return f'My name is: {self.name}'
 
-    def save(self, animal):
+
+class AnimalDB:
+    def get_animal(self, id) -> Animal:
+        pass
+
+    def save(self, animal: Animal):
         return f'Saving {animal.name} to DB'
 
 
 def main():
+
     animal = Animal('Lion')
-    save = animal.save(animal)
+    db = AnimalDB()
+    save = db.save(animal)
     print(save)
 
 

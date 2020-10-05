@@ -28,7 +28,7 @@ How does it violate Single Responsibility Principle?
 
 Single Responsibility Principle states that classes should have one responsibility,
 here, we can draw out two responsibilities: animal database management and animal
-properties management.  The constructor and get_name manage the Animal properties while
+properties management. The constructor and get_name manage the Animal properties while
 the save manages the Animal storage on a database.
 
 How will this design cause issues in the future?
@@ -74,7 +74,7 @@ to separate features if they will change for different reasons. - Steve Fenton
 """
 The downside of this solution is that the clients of the this code have to deal
 with two classes.  A common solution to this dilemma is to apply the Facade
-pattern.  Animal class will be the Facade for animal database management and
+pattern. Animal class will be the Facade for animal database management and
 animal properties management.
 """
 

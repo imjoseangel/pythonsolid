@@ -156,7 +156,7 @@ percent discount to a different customer type, you will need to add a new logic 
 the class.
 
 To make it follow the Open-Closed Principle, we will add a new class that will
-extend the Discount.  In this new class, we would implement its new behavior:
+extend the Discount. In this new class, we would implement its new behavior:
 """
 
 

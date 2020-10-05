@@ -86,7 +86,7 @@ class Animal:
 """
 The classes must implement the new method or error will be thrown.
 
-We see that it is impossible to implement a shape that can count lion legs but not
+We see that it is impossible to implement an animal that can count lion legs but not
 mouse or snake or girafe ones. We can just implement the methods to throw an error
 that shows the operation cannot be performed.
 

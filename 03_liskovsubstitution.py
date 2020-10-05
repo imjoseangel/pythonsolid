@@ -79,7 +79,7 @@ The animal_leg_count function cares less the type of Animal passed, it just
 calls the leg_count method.  All it knows is that the parameter must be of an
 Animal type, either the Animal class or its sub-class.
 
-The Animal class now have to implement/define a get_legs_count method.  And its
+The Animal class now have to implement/define a get_legs_count method. And its
 sub-classes have to implement the get_legs_count method:
 """
 

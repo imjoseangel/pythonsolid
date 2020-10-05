@@ -13,7 +13,7 @@ to function.
 """
 
 
-class XMLHttpService:
+class XMLHttpService(XMLHttpRequestService):
     pass
 
 
@@ -34,11 +34,11 @@ component. This design violates Dependency Inversion Principle A: High-level
 modules should not depend on low-level level modules. It should depend upon
 its abstraction.
 
-Ths Http class is forced to depend upon the XMLHttpService class.  If we were to
+The Http class is forced to depend upon the XMLHttpService class. If we need to
 change the Http connection service, maybe we want to connect to the internet
 through cURL or even Mock the http service.  We will painstakingly have to move
-through all the instances of Http to edit the code and this violates the OCP
-principle.
+through all the instances of Http to edit the code and this violates the Open-Closed
+Principle.
 
 The Http class should care less the type of Http service you are using. We make
 a Connection interface:
@@ -100,7 +100,7 @@ class MockHttpService(Connection):
 
 """
 Now, we can see that both high-level modules and low-level modules depend on
-abstractions.  Http class(high level module) depends on the Connection
+abstractions. Http class(high level module) depends on the Connection
 interface(abstraction) and the Http service types(low level modules) in turn,
 depends on the Connection interface(abstraction).
 

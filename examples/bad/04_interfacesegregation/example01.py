@@ -60,7 +60,7 @@ class Snake(Animal):
         print(DEFAULT_SNAKE_LEG_COUNT)
 
 
-class Manager(object):
+class Manager():
 
     def __init__(self):
         self.animal = None

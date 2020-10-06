@@ -5,13 +5,14 @@ from __future__ import (division, absolute_import, print_function,
                         unicode_literals)
 
 from abc import ABCMeta, abstractmethod
+from six import with_metaclass
 
 DEFAULT_LION_LEG_COUNT = 4
 DEFAULT_MOUSE_LEG_COUNT = 4
 DEFAULT_SNAKE_LEG_COUNT = 0
 
 
-class Animal(metaclass=ABCMeta):
+class Animal(with_metaclass(ABCMeta)):
 
     @abstractmethod
     def get_legs_count(self):

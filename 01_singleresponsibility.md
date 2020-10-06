@@ -101,16 +101,16 @@ Within the root of a repository, the examples are under a directory called `exam
 
 Open the *example01* file under the bad directory: [`solid-examples/examples/bad/01_singleresponsibility/example01.py`](examples/bad/01_singleresponsibility/example01.py)
 
-You can run it with the command `clear && python3 solid-examples/examples/bad/01_singleresponsibility/example01.py`{{execute}}
+You can run it with the command `clear && python3 solid-examples/examples/bad/01_singleresponsibility/example01.py`
 
 ### Second example (Good Design Pattern)
 
-Open the *example01* file under the good directory: `solid-examples/examples/good/01_singleresponsibility/example01.py`{{open}}
+Open the *example01* file under the good directory: [`solid-examples/examples/good/01_singleresponsibility/example01.py`](examples/good/01_singleresponsibility/example01.py)
 
-You can run it with the command `clear && python3 solid-examples/examples/good/01_singleresponsibility/example01.py`{{execute}}
+You can run it with the command `clear && python3 solid-examples/examples/good/01_singleresponsibility/example01.py`
 
 ### Third example (Good Design Pattern with Facade)
 
-Open the *example02* file under the good directory: `solid-examples/examples/good/01_singleresponsibility/example02.py`{{open}}
+Open the *example02* file under the good directory: [`solid-examples/examples/good/01_singleresponsibility/example02.py`](examples/good/01_singleresponsibility/example02.py)
 
-You can run it with the command `clear && python3 solid-examples/examples/good/01_singleresponsibility/example02.py`{{execute}}
+You can run it with the command `clear && python3 solid-examples/examples/good/01_singleresponsibility/example02.py`

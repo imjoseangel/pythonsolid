@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import (division, absolute_import, print_function,
+                        unicode_literals)
+
 from abc import ABCMeta, abstractmethod
 
 DEFAULT_LION_LEG_COUNT = 4
@@ -8,8 +11,7 @@ DEFAULT_MOUSE_LEG_COUNT = 4
 DEFAULT_SNAKE_LEG_COUNT = 0
 
 
-class Animal:
-    __metaclass__ = ABCMeta
+class Animal(metaclass=ABCMeta):
 
     @abstractmethod
     def get_legs_count(self):

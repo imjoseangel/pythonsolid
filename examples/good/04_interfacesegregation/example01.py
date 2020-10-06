@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import (division, absolute_import, print_function,
+                        unicode_literals)
+
 from abc import ABCMeta, abstractmethod
 
 DEFAULT_LION_LEG_COUNT = 4

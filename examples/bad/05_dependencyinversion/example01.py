@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import (division, absolute_import, print_function,
+                        unicode_literals)
+
 DEFAULT_LION_LEG_COUNT = 4
 DEFAULT_MOUSE_LEG_COUNT = 4
 

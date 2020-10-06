@@ -131,7 +131,7 @@ class Snake(Animal):
 
 Run it again:
 
-`clear && python2 solid-examples/examples/bad/04_interfacesegregation/example01.py`
+`clear && python solid-examples/examples/bad/04_interfacesegregation/example01.py`
 
 The following error is thrown:
 

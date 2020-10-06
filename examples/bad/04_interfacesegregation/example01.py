@@ -8,8 +8,7 @@ DEFAULT_MOUSE_LEG_COUNT = 4
 DEFAULT_SNAKE_LEG_COUNT = 0
 
 
-class Animal:
-    __metaclass__ = ABCMeta
+class Animal(metaclass=ABCMeta):
 
     @abstractmethod
     def get_legs_lion(self):

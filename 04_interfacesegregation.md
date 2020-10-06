@@ -115,7 +115,7 @@ Within the root of a repository, the examples are under a directory called `exam
 
 Open the *example01* file under the bad directory: [`solid-examples/examples/bad/04_interfacesegregation/example01.py`](examples/bad/04_interfacesegregation/example01.py)
 
-You can run it with the command `clear && python solid-examples/examples/bad/04_interfacesegregation/example01.py`
+You can run it with the command `clear && python3 solid-examples/examples/bad/04_interfacesegregation/example01.py`
 
 From the `Snake` class remove the `get_legs_lion` method and keep only this:
 
@@ -131,7 +131,7 @@ class Snake(Animal):
 
 Run it again:
 
-`clear && python solid-examples/examples/bad/04_interfacesegregation/example01.py`
+`clear && python3 solid-examples/examples/bad/04_interfacesegregation/example01.py`
 
 The following error is thrown:
 
@@ -143,4 +143,4 @@ TypeError: Can't instantiate abstract class Snake with abstract methods get_legs
 
 Open the *example01* file under the good directory: [`solid-examples/examples/good/04_interfacesegregation/example01.py`](examples/good/04_interfacesegregation/example01.py)
 
-You can run it with the command `clear && python solid-examples/examples/good/04_interfacesegregation/example01.py`
+You can run it with the command `clear && python3 solid-examples/examples/good/04_interfacesegregation/example01.py`

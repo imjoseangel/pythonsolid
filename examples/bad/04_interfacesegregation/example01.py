@@ -53,6 +53,9 @@ class Snake(Animal):
     def get_legs_lion(self):
         print(DEFAULT_LION_LEG_COUNT)
 
+    def get_legs_mouse(self):
+        print(DEFAULT_MOUSE_LEG_COUNT)
+
     def get_legs_snake(self):
         print(DEFAULT_SNAKE_LEG_COUNT)
 

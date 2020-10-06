@@ -99,7 +99,7 @@ Within the root of a repository, the examples are under a directory called `exam
 
 ### First example (Bad Design Pattern)
 
-Open the *example01* file under the bad directory: ![solid-examples/examples/bad/01_singleresponsibility/example01.py](RHCE.jpg)`examples/bad/01_singleresponsibility/example01.py`
+Open the *example01* file under the bad directory: ![solid-examples/examples/bad/01_singleresponsibility/example01.py](examples/bad/01_singleresponsibility/example01.py)
 
 You can run it with the command `clear && python3 solid-examples/examples/bad/01_singleresponsibility/example01.py`{{execute}}
 
